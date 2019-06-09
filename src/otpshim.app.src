@@ -1,0 +1,18 @@
+%%-*- mode: erlang -*-
+
+{application, otpshim,
+ [{description, "OTP shim library"},
+  {vsn, git},
+  {modules, []},
+  {registered, [
+      otpshim_sup
+   ]},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {mod, {otpshim, []}},
+  {env,[]}
+ ]}.
+
+% vim:ft=erlang
